@@ -1,0 +1,61 @@
+/* ===== ZURI CAFÉ — CUSTOM STYLES ===== */
+
+/* --- Colour variables: change these two lines to retheme the whole site --- */
+:root {
+  --zuri-brown: #4a2c17;
+  --zuri-gold:  #d4a843;
+}
+
+/* --- Hero section background --- */
+/* We use a dark brown colour since we don't have a photo yet */
+.hero-section {
+  background-color: var(--zuri-brown);
+  min-height: 85vh;         /* Takes up most of the screen height */
+  padding: 60px 20px;
+}
+
+/* --- Call-to-action strip --- */
+.zuri-cta {
+  background-color: var(--zuri-brown);
+}
+
+/* --- Navbar brand colour --- */
+.navbar-brand {
+  color: var(--zuri-gold) !important;
+  font-size: 1.4rem;
+}
+
+/* --- Card hover effect --- */
+.card {
+  transition: transform 0.2s ease;   /* Smooth animation */
+  border: none;
+}
+.card:hover {
+  transform: translateY(-5px);        /* Card lifts slightly on hover */
+}
+
+/* --- Buttons use our gold colour --- */
+.btn-warning {
+  background-color: var(--zuri-gold);
+  border-color: var(--zuri-gold);
+  color: #fff;
+  font-weight: 600;
+}
+.btn-warning:hover {
+  background-color: #b8902e;
+  border-color: #b8902e;
+  color: #fff;
+}
+
+/* --- Footer links --- */
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* --- General spacing helper --- */
+section {
+  scroll-margin-top: 70px;  /* So anchor links don't hide under the sticky navbar */
+}
