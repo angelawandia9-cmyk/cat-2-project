@@ -59,3 +59,116 @@ footer a:hover {
 section {
   scroll-margin-top: 70px;  /* So anchor links don't hide under the sticky navbar */
 }
+/* ===== ABOUT PAGE STYLES ===== */
+
+/* Small header banner used on inner pages (About, Menu, etc.) */
+.page-header {
+  background-color: var(--zuri-brown);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Placeholder box standing in for a real photo for now */
+.about-img-placeholder {
+  background-color: #ccc;
+  height: 320px;
+  font-style: italic;
+  color: #555 !important;
+}
+
+/* Circular placeholder for team member photos */
+.team-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--zuri-gold);
+}
+/* ===== MENU PAGE STYLES ===== */
+
+.menu-category-title {
+  border-bottom: 3px solid var(--zuri-gold);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Each menu row (name + price) */
+.menu-item {
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+.menu-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Price styling - gives it its own visual weight, separated from the name */
+.menu-item .menu-price {
+  color: var(--zuri-gold);
+  font-size: 1.05rem;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+/* Item name + description block */
+.menu-item .menu-info h6 {
+  margin-bottom: 4px;
+}
+/* ===== GALLERY PAGE STYLES ===== */
+
+/* Real photo styling instead of placeholder boxes */
+.gallery-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;   /* Crops photo neatly to fill the box without stretching */
+}
+
+.gallery-filter-btn.active {
+  background-color: var(--zuri-gold);
+  color: #fff;
+  border-color: var(--zuri-gold);
+}
+/* ===== BLOG PAGE STYLES ===== */
+
+/* Placeholder image box at the top of each blog card */
+.blog-img-placeholder {
+  background-color: #999;
+  height: 160px;
+  font-style: italic;
+}
+/* ===== TESTIMONIALS PAGE STYLES ===== */
+
+/* Small circular placeholder for customer photo */
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--zuri-brown);
+  flex-shrink: 0;   /* Stops it from squishing on small screens */
+}
+
+/* Subtle left border accent on each testimonial card */
+.testimonial-card {
+  border-left: 4px solid var(--zuri-gold);
+  border-radius: 0;  /* Square corners look better with a side accent border */
+}
+/* ===== CONTACT PAGE STYLES ===== */
+
+/* Map placeholder box */
+.map-placeholder {
+  background-color: var(--zuri-brown);
+  height: 200px;
+  font-style: italic;
+}
+
+/* Make invalid form fields clearly red-bordered */
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+.is-invalid ~ .invalid-feedback {
+  display: block;
+}
