@@ -4,20 +4,16 @@
 :root {
   --zuri-brown: #2c1a0e;
   --zuri-gold:  #d4a843;
-  --zuri-bg: #f4f9f4;
+  --zuri-bg:    #e8f5e8;
 }
+/* --- Global background --- */
 body {
-  background-color: var(--zuri-bg);
+  background-color: #e8f5e8;
 }
 
 /* --- Hero section background --- */
 .hero-section {
-  background-color: var(--zuri-brown);
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=1400&h=800&fit=crop');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #2c1a0e 0%, #1a0e06 60%, #3d2010 100%);
   min-height: 85vh;
   padding: 60px 20px;
 }
@@ -55,13 +51,6 @@ body {
   color: #fff;
 }
 
-/* --- Hero section background --- */
-.hero-section {
-  background: linear-gradient(135deg, #4a2c17 0%, #2c1a0e 60%, #6b3d1e 100%);
-  min-height: 85vh;
-  padding: 60px 20px;
-}
-
 /* --- Hero outline button --- */
 .hero-outline-btn {
   border: 2px solid #ffffff;
@@ -94,8 +83,35 @@ section {
   scroll-margin-top: 70px;
 }
 
-/* ===== ABOUT PAGE STYLES ===== */
+/* ===== SMOOTH SCROLL ===== */
+html {
+  scroll-behavior: smooth;
+}
 
+/* ===== NAVBAR HOVER ===== */
+.nav-link:hover {
+  color: var(--zuri-gold) !important;
+}
+
+/* ===== ACTIVE NAV LINK ===== */
+.nav-link.active {
+  color: var(--zuri-gold) !important;
+  font-weight: 600;
+}
+
+/* ===== BUTTON TRANSITIONS ===== */
+.btn {
+  transition: all 0.2s ease;
+}
+
+/* ===== CONSISTENT CARD IMAGE HEIGHT ===== */
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+
+/* ===== PAGE HEADER ===== */
 .page-header {
   background-color: var(--zuri-brown);
   padding-top: 50px;
@@ -107,6 +123,9 @@ section {
 .page-header .container {
   width: 100%;
 }
+
+
+/* ===== ABOUT PAGE STYLES ===== */
 
 .about-img-placeholder {
   background-color: #ccc;
@@ -142,6 +161,7 @@ section {
   object-fit: cover;
   border-radius: 10px;
 }
+
 
 /* ===== MENU PAGE STYLES ===== */
 
@@ -202,6 +222,7 @@ section {
   flex-shrink: 0;
 }
 
+
 /* ===== GALLERY PAGE STYLES ===== */
 
 .gallery-img {
@@ -216,6 +237,7 @@ section {
   border-color: var(--zuri-gold);
 }
 
+
 /* ===== BLOG PAGE STYLES ===== */
 
 .blog-card-img {
@@ -223,6 +245,7 @@ section {
   height: 180px;
   object-fit: cover;
 }
+
 
 /* ===== TESTIMONIALS PAGE STYLES ===== */
 
@@ -239,6 +262,7 @@ section {
   border-radius: 0;
 }
 
+
 /* ===== CONTACT PAGE STYLES ===== */
 
 .map-placeholder {
@@ -252,29 +276,4 @@ section {
 }
 .is-invalid ~ .invalid-feedback {
   display: block;
-}
-/* ===== SMOOTH SCROLL ===== */
-html {
-  scroll-behavior: smooth;
-}
-
-/* ===== NAVBAR HOVER ===== */
-.nav-link:hover {
-  color: var(--zuri-gold) !important;
-}
-
-/* ===== ACTIVE NAV LINK ===== */
-.nav-link.active {
-  color: var(--zuri-gold) !important;
-  font-weight: 600;
-}
-/* ===== CONSISTENT CARD IMAGE HEIGHT ===== */
-.card-img-top {
-  height: 220px;
-  object-fit: cover;
-}
-
-/* ===== BUTTON TRANSITIONS ===== */
-.btn {
-  transition: all 0.2s ease;
 }
