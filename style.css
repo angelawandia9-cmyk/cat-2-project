@@ -175,3 +175,9 @@ section {
 .is-invalid ~ .invalid-feedback {
   display: block;
 }
+/* ===== BLOG CARD IMAGE ===== */
+.blog-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
