@@ -258,3 +258,13 @@ html {
   color: var(--zuri-gold) !important;
   font-weight: 600;
 }
+/* ===== CONSISTENT CARD IMAGE HEIGHT ===== */
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ===== BUTTON TRANSITIONS ===== */
+.btn {
+  transition: all 0.2s ease;
+}
