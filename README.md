@@ -1,4 +1,3 @@
-# cat-2-project
 # Zuri Café Website
 
 A fully responsive multi-page website for **Zuri Café**, a fictional café based in Westlands, Nairobi, Kenya. Built as a Web Application Development assignment using HTML5, CSS3, JavaScript ES6+, and Bootstrap 5.
