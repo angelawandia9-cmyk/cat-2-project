@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Find answers to frequently asked questions about Zuri Café including reservations, parking and Wi-Fi." />
   <title>FAQ – Zuri Café</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -10,7 +11,6 @@
 </head>
 <body>
 
-  <!-- ===== NAVIGATION BAR ===== -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">☕ Zuri Café</a>
@@ -32,34 +32,32 @@
       </div>
     </div>
   </nav>
-  <!-- ===== END NAVIGATION ===== -->
 
-
-  <!-- ===== PAGE HEADER ===== -->
   <section class="page-header text-white text-center py-5">
     <div class="container">
       <h1>Frequently Asked Questions</h1>
       <p class="lead">Everything you might want to know before visiting</p>
     </div>
   </section>
-  <!-- ===== END PAGE HEADER ===== -->
 
-
-  <!-- ===== FAQ ACCORDION ===== -->
-  <!-- Bootstrap's accordion component - clicking a question expands/collapses the answer -->
-  <!-- This counts as one of our required "advanced Bootstrap components" -->
   <section class="py-5">
     <div class="container">
       <div class="accordion" id="faqAccordion">
 
         <!-- FAQ 1 -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse1"
+              aria-expanded="true"
+              aria-controls="collapse1">
               Do I need a reservation to dine in?
             </button>
           </h2>
-          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div id="collapse1" class="accordion-collapse collapse show"
+            aria-labelledby="heading1"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Walk-ins are always welcome. However, for groups of 6 or more, or for our
               Friday open mic nights, we recommend reserving a table in advance by calling
@@ -70,12 +68,18 @@
 
         <!-- FAQ 2 -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse2"
+              aria-expanded="false"
+              aria-controls="collapse2">
               Do you offer takeaway or delivery?
             </button>
           </h2>
-          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div id="collapse2" class="accordion-collapse collapse"
+            aria-labelledby="heading2"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Yes, all our menu items are available for takeaway directly at the counter.
               We also partner with major delivery apps in Nairobi for orders within a 7km
@@ -86,12 +90,18 @@
 
         <!-- FAQ 3 -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse3"
+              aria-expanded="false"
+              aria-controls="collapse3">
               Is there parking available?
             </button>
           </h2>
-          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div id="collapse3" class="accordion-collapse collapse"
+            aria-labelledby="heading3"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Yes, we have a small private parking area that fits about 10 vehicles, plus
               additional metered street parking along Waiyaki Way.
@@ -101,27 +111,39 @@
 
         <!-- FAQ 4 -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse4"
+              aria-expanded="false"
+              aria-controls="collapse4">
               Do you cater for vegetarian or vegan diets?
             </button>
           </h2>
-          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div id="collapse4" class="accordion-collapse collapse"
+            aria-labelledby="heading4"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Yes. Our Garden Salad Bowl and Avocado Toast are vegetarian, and we can
-              prepare a vegan version of most items on request, just let your server know.
+              prepare a vegan version of most items on request — just let your server know.
             </div>
           </div>
         </div>
 
         <!-- FAQ 5 -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+          <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse5"
+              aria-expanded="false"
+              aria-controls="collapse5">
               Can I host a private event at Zuri Café?
             </button>
           </h2>
-          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div id="collapse5" class="accordion-collapse collapse"
+            aria-labelledby="heading5"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Absolutely. We host birthdays, baby showers, and small corporate meetups
               after 6pm on weekdays. Reach out via our Contact page with your preferred
@@ -132,4 +154,45 @@
 
         <!-- FAQ 6 -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header" id="heading6">
+            <button class="accordion-button collapsed" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse6"
+              aria-expanded="false"
+              aria-controls="collapse6">
+              Do you have Wi-Fi for remote work?
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse"
+            aria-labelledby="heading6"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, we offer free high-speed Wi-Fi to all customers. We just kindly ask
+              that during peak hours (12pm–2pm), tables are shared or kept to a
+              reasonable time so other guests can be seated too.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1 fw-bold">☕ Zuri Café</p>
+      <p class="mb-1 small">Waiyaki Way, Westlands, Nairobi &nbsp;|&nbsp; +254 712 345 678</p>
+      <p class="mb-2 small">Open Daily: 7:00 AM – 9:00 PM</p>
+      <small>
+        <a href="about.html" class="text-warning me-2">About</a>
+        <a href="menu.html" class="text-warning me-2">Menu</a>
+        <a href="gallery.html" class="text-warning me-2">Gallery</a>
+        <a href="contact.html" class="text-warning">Contact</a>
+      </small>
+      <p class="mt-3 mb-0 small text-muted">© 2026 Zuri Café, Nairobi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
